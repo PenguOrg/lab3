@@ -45,8 +45,8 @@ h1 {
 
 p{
   text-align: center;
-  padding-top: 4px;
-  padding-bottom: 20px;
+  padding-top: 0.2em; /* 4 / 20 */
+  padding-bottom: 1em;/* 20 / 20 */
 }
 
 fieldset{
@@ -55,16 +55,16 @@ fieldset{
 
 input[type=email],
 input[type=submit]{
-  border: 0px; /* Removes the border coming from resets CSS */
-  padding: 8px 12px;
-  border-radius: 4px;
+  border: 0em; /* Removes the border coming from resets CSS */
+  padding: 0.4em 0.6em;/* 8 / 20 | 12 / 20 */
+  border-radius: 0.2em;/* 4 / 20 */
   background-color: #b7b7b7;
 }
 #input-submit{
-  padding-top: 12px;
+  padding-top: 0.6em;/* 12 / 20 */
 }
 input[type=submit]{
-  padding: 8px 20px;
+  padding: 0.4em 1em;/* 8 / 20 | 20 / 20 */
 }
 
 ol.formlist {
@@ -78,7 +78,7 @@ li {
 }
 
 label{
-  padding-bottom: 12px;
+  padding-bottom: 0.6em;/* 12 / 20 */
 }
 
 label:after{
