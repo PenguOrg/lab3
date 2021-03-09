@@ -49,6 +49,22 @@ p{
   padding-bottom: 20px;
 }
 
+fieldset{
+  background: #515151;
+}
+
+input[type=email],
+input[type=submit]{
+  border: 0px; /* Removes the border coming from resets CSS */
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: #b7b7b7;
+}
+
+input[type=submit]{
+  padding: 8px 20px;
+}
+
 ol.formlist {
   list-style-position: inside;
 }
