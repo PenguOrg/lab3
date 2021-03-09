@@ -59,6 +59,10 @@ li {
   margin-bottom: 0.8em;
 }
 
+label{
+  padding-bottom: 12px;
+}
+
 label:after{
   content:"\a";
   white-space: pre;
@@ -72,24 +76,4 @@ body {
 header,
 main {
   grid-column: 2 / 3;
-}
-
-@media screen and (min-width: 37.5em) { /* 600 / 16 */
-
-li{
-  text-align: left;
-}
-
-label{
-  display: inline-block;
-  width:9.375em;
-  text-align: left;
-
-}
-
-  #submit{
-    text-align:center;
-  }
-
-
 }
