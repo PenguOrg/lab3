@@ -60,7 +60,9 @@ input[type=submit]{
   border-radius: 4px;
   background-color: #b7b7b7;
 }
-
+#input-submit{
+  padding-top: 12px;
+}
 input[type=submit]{
   padding: 8px 20px;
 }
