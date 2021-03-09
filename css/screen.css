@@ -33,7 +33,57 @@ label {
   display: block;
 }
 
-/* ===== LAYOUT STYLES ====== */
+@supports (display: grid) {
+  html { padding: 1em 0; }
+}
+
+h1 {
+  font-size: 1.95315em; /* 39.063 / 20 */
+  line-height: 1.228784272em; /* 48 / 39.063 */
+  text-align: center;
+}
+
+ol.formlist {
+  list-style-position: inside;
+}
+
+li {
+  text-align: center;
+  margin: 0.2em; /* 4 / 20*/
+  margin-bottom: 0.8em;
+}
+
+label:after{
+  content:"\a";
+  white-space: pre;
+}
+
+body {
+  display: grid;
+  grid-template-columns: minmax(0.625em,1fr) minmax(5ch,80ch) minmax(0.625em,1fr);
+}
+
+header,
+main {
+  grid-column: 2 / 3;
+}
+
+@media screen and (min-width: 37.5em) { /* 600 / 16 */
+
+li{
+  text-align: left;
+}
+
+label{
+  display: inline-block;
+  width:9.375em;
+  text-align: left;
+
+}
+
+  li.submit{
+    text-align:center;
+  }
 
 
-/* ===== STATE STYLES ======= */
+}
