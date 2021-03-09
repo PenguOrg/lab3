@@ -4,22 +4,23 @@
   <head>
     <title>HTML Form Elements</title>
     <meta charset="utf-8" />
-    <meta name="viewport" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=none" />
     <link rel="stylesheet" media="screen" href="css/resets.css" />
     <link rel="stylesheet" media="screen" href="css/screen.css" />
-
   </head>
 
   <body>
-    <main id="content">
+    <header id="header">
       <h1>Secret Diabetes Newsletter</h1>
       <p>
         Sign up and learn 5 secrets to fight Diabetes!
       </p>
+    </header>
 
+    <main id="content">
       <form method="get" action="#null">
         <fieldset>
-          <ol>
+          <ol class ="formlist">
             <li id="input-email">
               <label for="email">Email</label>
               <input type="email" name="email" id="email" pattern="^.+@.+$" />
@@ -28,7 +29,7 @@
               <label for="age-verification">I am over 18 years old</label>
               <input type="checkbox" id="age-verification" name="age-verification" value="18" />
             </li>
-            <li id="input-submit">
+            <li id="submit">
               <input type="submit" name="submit" id="submit" value="Subscribe" />
             </li>
           </ol>
